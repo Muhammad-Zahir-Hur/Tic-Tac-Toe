@@ -1,0 +1,106 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body{
+    background: #000;
+}
+
+.all{
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    gap: 1px;
+    background: rgb(132, 0, 255);
+    transform: translate(-50%, -50%);
+
+}
+
+.popup{
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size:  50px;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 1%;
+}
+
+.box{
+    font-size: 40px;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    outline: none;
+    border: none;
+
+}
+
+
+#redo{
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    background: aqua;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+h1{
+    font-size: 100px;
+}
+
+#tac{
+    position: absolute; top: 50vh;  color: green;
+    
+}
+
+#toe{
+    position: absolute; top: 50vh; right: 0; color: green;
+}
+
+
+#tic{
+    position: absolute; 
+    color: red; 
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
+}
+
+/* For small devices */
+
+@media (max-width: 768px){
+    #tac{
+        left: 2px;
+        font-size: 70px;
+    }
+  #toe{
+      right: 2px;
+      font-size: 70px;
+  }
+
+  .popup{
+      font-size: 30px;
+      padding: 2%;
+  }
+}
